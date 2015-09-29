@@ -8,7 +8,6 @@ export default Ember.Route.extend({
     addTicket(params) {
       var ticket = this.store.createRecord('ticket', params);
       ticket.save();
-      debugger;
       this.transitionTo('index');
     }
   }

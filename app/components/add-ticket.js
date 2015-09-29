@@ -1,6 +1,12 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  // App = Ember.Application.create({})
+  //
+  // Ember.TextSupport.reopen({
+  //     attributeBindings: ['required']
+  // });
+
   showTicketForm: false,
 
   actions: {
@@ -14,7 +20,6 @@ export default Ember.Component.extend({
         openTime: Date.now(),
         closeTime: false
       };
-      debugger;
       this.toggleProperty('showTicketForm');
       this.sendAction('addTicket', params);
     }

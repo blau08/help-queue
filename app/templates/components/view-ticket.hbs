@@ -1,0 +1,10 @@
+<button {{action 'viewTicket'}} class="list-group-item">
+  <h1>{{ticket.student}}</h1>
+  <p>{{time-passed ticket.openTime}}</p>
+  {{#if showTicket}}
+    <div class="well">
+      {{ticket.description}}
+    </div>
+    <button class="btn btn-danger">Close</button>
+  {{/if}}
+</button>

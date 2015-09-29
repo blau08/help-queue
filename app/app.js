@@ -15,4 +15,8 @@ App = Ember.Application.extend({
 
 loadInitializers(App, config.modulePrefix);
 
+Ember.TextSupport.reopen({
+    attributeBindings: ['required']
+});
+
 export default App;
