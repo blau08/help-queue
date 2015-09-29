@@ -2,7 +2,9 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model() {
-    return this.store.findAll('ticket');
+    return this.store.find('ticket').then(function(open) {
+      return open.filterBy('closeTime', false);
+    })
   },
   actions: {
     closeTicket(ticket, params) {
