@@ -1,0 +1,13 @@
+{{#if showTicketForm}}
+  <form>
+    <div class="form-group">
+      <label for="Name">Name</label>
+      {{input class="form-control" value=name id="name"}}
+      <label for="description">Description</label>
+      {{input class="form-control" value=description id="description"}}
+    </div>
+    <button {{action 'submit'}}>Submit</button>
+  </form>
+{{else}}
+  <button {{action 'addTicket'}}>Add Ticket</button>
+{{/if}}
