@@ -1,13 +1,16 @@
-{{#if showTicketForm}}
-  <form>
-    <div class="form-group">
-      <label for="Name">Name</label>
-      {{input class="form-control" value=name id="name"}}
-      <label for="description">Description</label>
-      {{textarea rows="4" class="form-control" value=description id="description"}}
+
+<div class="row">
+  <div class="col-xs-6 col-xs-offset-3">
+
+<form>
+  <div class="form-group">
+    <div class='ticket-name'>
+
+    {{input class="form-control" value=name id="name" placeholder="Please enter your name"}}
     </div>
-    <button {{action 'submit'}}>Submit</button>
-  </form>
-{{else}}
-  <button {{action 'addTicket'}}>Add Ticket</button>
-{{/if}}
+    {{textarea rows="4" class="form-control" value=description id="description" placeholder="Give a brief description of issue you are having."}}
+  </div>
+  <button class="btn btn-danger pull-right"{{action 'submit'}}>Help!</button>
+</form>
+  </div>
+</div>

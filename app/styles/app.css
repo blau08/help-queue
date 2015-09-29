@@ -21,3 +21,12 @@ body {
   text-decoration: none;
   color: white;
 }
+
+.well.answer {
+  background: white;
+}
+
+.ticket-name {
+  margin-top: 2em;
+  margin-bottom: 1em;
+}

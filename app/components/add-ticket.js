@@ -1,18 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  // App = Ember.Application.create({})
-  //
-  // Ember.TextSupport.reopen({
-  //     attributeBindings: ['required']
-  // });
-
-  showTicketForm: false,
-
   actions: {
-    addTicket() {
-      this.toggleProperty('showTicketForm');
-    },
     submit() {
       var params = {
         student: this.get('name'),
@@ -20,8 +9,8 @@ export default Ember.Component.extend({
         openTime: Date.now(),
         closeTime: false
       };
-      this.toggleProperty('showTicketForm');
       this.sendAction('addTicket', params);
+      debugger;
     }
   }
 });

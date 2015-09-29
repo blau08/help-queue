@@ -3,6 +3,6 @@
 </div>
 <div class="list-group">
   {{#each model as |ticket|}}
-    {{view-ticket ticket=ticket}}
+    {{view-ticket ticket=ticket closeTicket='closeTicket'}}
   {{/each}}
 </div>
