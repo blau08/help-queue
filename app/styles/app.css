@@ -30,3 +30,29 @@ body {
   margin-top: 2em;
   margin-bottom: 1em;
 }
+
+.stats {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.stats-link:hover {
+  text-decoration: none;
+}
+
+.stats-header {
+  margin-top: .5em;
+  text-align: center;
+  color: gray;
+  font-size: 3.5em;
+}
+
+.total-tickets,
+.closed-tickets {
+  font-size: 2em;
+  margin-top: 1em;
+  color: gray;
+}
+#statistics {
+  text-align: center;
+}

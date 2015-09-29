@@ -1,0 +1,22 @@
+<div class="navbar">
+  {{#link-to 'teacher' class="student-link"}}Queue{{/link-to}}
+</div>
+
+<div class=stats-header>
+  Daily Statistics
+</div>
+
+<div class="container" id="statistics">
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="total-tickets">
+        Total Tickets for Today: {{model.tickets.length}}
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="closed-tickets">
+        Closed Tickets: {{model.closed.length}}
+      </div>
+    </div>
+  </div>
+</div>

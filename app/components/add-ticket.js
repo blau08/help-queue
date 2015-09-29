@@ -7,10 +7,10 @@ export default Ember.Component.extend({
         student: this.get('name'),
         description: this.get('description'),
         openTime: Date.now(),
-        closeTime: false
+        closeTime: false,
+        closed: false
       };
       this.sendAction('addTicket', params);
-      debugger;
     }
   }
 });

@@ -7,6 +7,7 @@ var Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('teacher');
+  this.route('stats');
 });
 
 export default Router;

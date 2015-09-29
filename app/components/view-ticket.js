@@ -8,7 +8,8 @@ export default Ember.Component.extend({
     },
     closeTicket(ticket) {
       var params = {
-        closeTime: Date.now()
+        closeTime: Date.now(),
+        closed: true
       }
       this.sendAction('closeTicket', ticket, params)
     }
