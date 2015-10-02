@@ -3,14 +3,22 @@
   <div class="col-xs-6 col-xs-offset-3">
 
 <form>
-  <div class="form-group">
+  <div id="question" class="form-group">
     <div class='ticket-name'>
 
     {{input class="form-control" value=name id="name" placeholder="Please enter your name"}}
     </div>
     {{textarea rows="4" class="form-control" value=description id="description" placeholder="Give a brief description of issue you are having."}}
-  </div>
+    <br>
   <button class="btn btn-danger pull-right"{{action 'submit'}}>Help!</button>
+  <br>
+  <br>
+  </div>
+  {{#if clickHelp}}
+    <div class="well answer">
+      <h1>Thank you. Help is on the way.</h1>
+    </div>
+  {{/if}}
 </form>
   </div>
 </div>

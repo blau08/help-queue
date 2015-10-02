@@ -11,6 +11,13 @@ export default Ember.Component.extend({
         closed: false
       };
       this.sendAction('addTicket', params);
-    }
+      // viewHelp() {
+      this.set('addTicket', false);
+      this.toggleProperty('clickHelp');
+      // },
+      this.set('name', "");
+      this.set('description', "");
+    },
+
   }
 });
